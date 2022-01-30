@@ -16,6 +16,7 @@ button:focus {
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
+  -webkit-tap-highlight-color: transparent;
 }
 .logo {
   height: 30px !important;
