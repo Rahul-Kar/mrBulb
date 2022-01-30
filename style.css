@@ -18,13 +18,15 @@ button:focus {
   list-style: none;
   -webkit-tap-highlight-color: transparent;
 }
+a:focus,
+a:visited,
+a:active {
+  outline: none !important;
+}
 .logo {
   height: 30px !important;
   width: 20px !important;
   margin-right: 10px;
-  /* background-color: transparent; */
-  /* padding: 10px;
-  border-radius: 50%; */
 }
 .footer_icons {
   font-size: 1.3rem !important;
@@ -61,7 +63,7 @@ footer a {
 .social_icon a:hover i {
   color: rgb(156, 163, 175) !important;
   transition: all 0.2s ease;
-transform: scale(0.9);
+  transform: scale(0.9);
 }
 
 @media (min-width: 640px) {
@@ -78,6 +80,10 @@ transform: scale(0.9);
     line-height: 1.625;
   }
 }
+button:focus {
+  outline: none !important;
+}
+
 .btn {
   border-radius: 100px;
   padding-top: 30px 50px;
@@ -104,29 +110,6 @@ transform: scale(0.9);
   top: 0 !important;
   z-index: 1000 !important;
   width: 100% !important;
-}
-
-.navbar-brand {
-  display: flex;
-}
-.logo_title {
-  font-size: 1.3rem !important;
-  font-weight: 700 !important;
-}
-.nav-link {
-  text-transform: capitalize;
-}
-.nav-link {
-  padding: 10px 20px !important;
-  font-size: 20px;
-  font-style: bold;
-}
-.navbar a:hover {
-  /* border-radius: 15px; */
-  /* background-color: rgba(0, 168, 165, 0.3); */
-}
-.nav-item {
-  padding: 0 20px;
 }
 .container {
   max-width: 1300px !important;
@@ -164,21 +147,20 @@ transform: scale(0.9);
   box-shadow: 0 5px 13px rgb(255 255 255 / 50%) !important;
   margin-left: 1.5rem !important;
 }
-.navbar{background: transparent !important;}
-.navbar_dark{
-  background-color: rgb(99, 102, 241  ) !important;
+.navbar {
+  background: transparent !important;
+}
+.navbar_dark {
+  background-color: rgb(31, 41, 55) !important;
+  background-color: rgb(99, 102, 241) !important;
   transition: 0.4s ease-in-out;
 }
-.navbar_dark a{
+.navbar_dark a {
   color: white !important;
-
 }
-.navbar_dark a:hover,
-.navbar_dark a:active,
-.navbar_dark a:focus {
-  background-color: rgba(153, 153, 241, 0.589) !important;
+a:focus {
+  outline: none !important;
 }
-
 @media (max-width: 992px) {
   .nav-item {
     text-align: center;
@@ -192,6 +174,11 @@ transform: scale(0.9);
   }
 }
 @media (max-width: 770px) {
+  .navbar_dark a:hover,
+  .navbar_dark a:active,
+  .navbar_dark a:focus {
+    background-color: rgba(153, 153, 241, 0.589) !important;
+  }
   .about h1 {
     font-size: 2.1rem !important;
     margin-bottom: 1.5rem !important;
@@ -215,6 +202,15 @@ transform: scale(0.9);
     line-height: 1.5 !important;
     font-size: 0.9rem !important;
   }
+  .navbar a:hover {
+    background-color: rgb(71 85 105);
+  }
+  .navbar a {
+    text-align: center;
+  }
+  .navbar_dark a {
+    border-color: #fff !important;
+  }
 }
 
 @media (max-width: 650px) {
@@ -236,16 +232,12 @@ transform: scale(0.9);
   #myBtn {
     right: 10px;
   }
-  .navbar a{
-color: #fff !important;
+  .navbar a {
+    color: #fff !important;
   }
 }
 
 @media (max-width: 550px) {
-  .features .flex-col {
-    /* padding-left: 0 !important;
-    padding-right: 0 !important; */
-  }
   .feature {
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
   }
@@ -303,4 +295,10 @@ color: #fff !important;
     font-size: 1.45rem !important;
     padding: 0.6rem !important;
   }
+  .navbar a:hover {
+    background-color: rgb(71 85 105);
+  }
+}
+a:focus {
+  outline: none !important;
 }
