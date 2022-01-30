@@ -166,7 +166,6 @@ transform: scale(0.9);
 }
 .navbar{background: transparent !important;}
 .navbar_dark{
-  background-color: rgb(31 ,41, 55 ) !important;
   background-color: rgb(99, 102, 241  ) !important;
   transition: 0.4s ease-in-out;
 }
@@ -174,13 +173,12 @@ transform: scale(0.9);
   color: white !important;
 
 }
-.navbar_dark a:hover{
+.navbar_dark a:hover,
+.navbar_dark a:active,
+.navbar_dark a:focus {
   background-color: rgba(153, 153, 241, 0.589) !important;
-  /* background-color: rgba(255, 255, 255, 0.712) !important; */
 }
-.social_icon a:hover i{
 
-}
 @media (max-width: 992px) {
   .nav-item {
     text-align: center;
